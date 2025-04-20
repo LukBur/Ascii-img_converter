@@ -1,6 +1,12 @@
 from PIL import Image
+import sys
 
-img = Image.open("images/osaka.png").convert("L")
+if len(sys.argv) < 2:
+    print("Usage: python main.py path/to/image.jpg")
+    sys.exit(1)
+
+image_path = sys.argv[1]
+img = Image.open("images/" + image_path).convert("L")
 
 img_width, img_height = img.size
 ascii_chars = "@%#*+=-:. "
