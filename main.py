@@ -28,7 +28,7 @@ def rotate_ascii_image_clockwise(ascii_image_rows):
 ascii_image = []
 
 # divide whole image to tiles
-for i in range(0, img_width, img_width // 80):
+for i in range(0, img_width, img_width // 100):
     row = ""
     for j in range(0, img_height, img_height // 40):
         left = i
@@ -45,4 +45,5 @@ rotated_ascii = rotate_ascii_image_clockwise(ascii_image)
 
 # print
 for row in rotated_ascii:
-    print(row)
+    flipped = ''.join(reversed(row))
+    print(flipped)
