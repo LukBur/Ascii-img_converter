@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open("tree.JPG").convert("L")
+img = Image.open("images/osaka.png").convert("L")
 
 img_width, img_height = img.size
 ascii_chars = "@%#*+=-:. "
