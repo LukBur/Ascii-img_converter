@@ -6,7 +6,7 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 image_path = sys.argv[1]
-img = Image.open("images/" + image_path).convert("L")
+img = Image.open("images/" + image_path + ".png").convert("L")
 
 img_width, img_height = img.size
 ascii_chars = "@%#*+=-:. "
