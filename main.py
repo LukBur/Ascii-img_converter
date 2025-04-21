@@ -21,7 +21,6 @@ def tile_to_ascii(tile):
     char = ascii_chars[int(avg_brightness / 255 * scale)]
     return char
 
-# idfk how, but it does the job so w/e
 def rotate_ascii_image_clockwise(ascii_image_rows):
     return [''.join(row) for row in zip(*ascii_image_rows[::-1])]
 
