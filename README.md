@@ -18,7 +18,7 @@ pip install pillow
 Download any picture of your choice, place it in `images` directory and run: 
 
 ```bash
-python main.py
+python main.py [filename (without .png)]
 ```
 
 ![alt text](image.png)
